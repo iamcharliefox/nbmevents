@@ -1,0 +1,1 @@
+Message for logged in sponsors or attendees and show is inactive.

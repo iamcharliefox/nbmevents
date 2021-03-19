@@ -1,0 +1,62 @@
+.landing {
+  background-color: $gpx-blue;
+  // width: 100%;
+  display: grid;
+  min-height: calc(100vh - 160px);
+  background-size: cover;
+  background-position: center;
+  align-items: flex-start;
+  // color: $gpx-white;
+
+  .container {
+    background-color: $gpx-white;
+    max-width: 90vw;
+    padding: $gutter;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+
+  .button {
+    margin-left: 0;
+    margin-top: $gutter;
+  }
+}
+
+
+.page-login {
+
+
+  .gpx-wrapper {
+      // background-color: $gpx-blue;
+      width: 100%;
+      padding-top: 50px;
+      // display: grid;
+      min-height: calc(100vh - 160px);
+      background-size: cover;
+      background-position: center;
+      align-items: flex-start !important;
+  }
+
+
+}
+
+  .tml {
+    max-width: 400px;
+
+    button {
+      background-color: $gpx-blue;
+      color: $gpx-white;
+      padding: 10px 20px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    input {
+      font-size: 16px;
+      line-height: 30px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  }

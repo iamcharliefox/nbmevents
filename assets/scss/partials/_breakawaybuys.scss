@@ -1,0 +1,33 @@
+.breakaway-buys {
+    text-align: center;
+    padding: $gutter*2 0;
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: $gutter;
+    }
+
+    .buy-row {
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-gap: $gutter;
+        text-align: left;
+        background-color: $gpx-white;
+        padding: $gutter;
+    }
+
+    .thumbnail {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .details {
+       
+
+        a.button {
+            margin-left: 0;
+        }
+    }
+}

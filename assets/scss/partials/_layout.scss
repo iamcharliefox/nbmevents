@@ -1,0 +1,16 @@
+.container {
+  width: 1400px;
+  max-width: 90%;
+  margin: auto;
+
+  &.full-height {
+    min-height: calc(100vh - 205px);
+  }
+
+  &.offline {
+    min-height: calc(100vh - 160px);
+  }
+}
+
+
+

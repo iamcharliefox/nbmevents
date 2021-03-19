@@ -1,0 +1,11 @@
+body .login h1 a {
+  background-image: url('/assets/images/gpx-logo-blue.svg');
+}
+
+#profile-page {
+  /* display: none; */
+}
+
+.acf-oembed {
+  max-width:640px;
+}

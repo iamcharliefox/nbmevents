@@ -1,0 +1,252 @@
+/*
+Theme Name: Graphics Pro Expo
+Text Domain: gpx
+Version: 1.4.2
+Description: A custom theme to showcase events at The Graphics Pro Expo
+Author: Charlie Fox
+Author URI: https://www.cf4.me/
+*/
+
+@import 'assets/scss/partials/reset';
+@import 'assets/scss/partials/vars';
+@import 'assets/scss/partials/mixins';
+@import 'assets/scss/partials/colors';
+// @import 'assets/scss/partials/animation';
+@import 'assets/scss/partials/typography';
+@import 'assets/scss/partials/layout';
+@import 'assets/scss/partials/buttons';
+// sections
+// @import 'assets/scss/partials/navigation';
+@import 'assets/scss/partials/hero';
+// @import 'assets/scss/partials/main';
+@import 'assets/scss/partials/tabs';
+// @import 'assets/scss/partials/sidebar';
+@import 'assets/scss/partials/footer';
+// pages
+// @import 'assets/scss/partials/faq';
+// @import 'assets/scss/partials/exhibit';
+
+
+@import 'assets/scss/partials/navigation';
+
+@import 'assets/scss/partials/showcase';
+@import 'assets/scss/partials/presentation';
+@import 'assets/scss/partials/quicktips';
+@import 'assets/scss/partials/hub';
+@import 'assets/scss/partials/landing';
+@import 'assets/scss/partials/breakawaybuys';
+
+
+section {
+  box-sizing: border-box;
+  border-bottom: 10px solid red;
+}
+
+
+
+.presentation-chat-container {
+    padding-top: 0;
+    position: fixed;
+    bottom: 50px;
+    right: 24px;
+    width: 75%;
+    max-width: 500px;
+    height: auto;
+    z-index: 101;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-box-shadow: 4px 4px 10px rgba(34, 34, 34, 0.5);
+            box-shadow: 4px 4px 10px rgba(34, 34, 34, 0.5);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .presentation-chat-container.docked {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-radius: 0px;
+  }
+  
+  .presentation-chat-container .chat-title {
+    background-color: #789C3D;
+    color: #fff;
+    line-height: 36px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 80px;
+        grid-template-columns: auto 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .presentation-chat-container .chat-title .title {
+    padding: 0 12px;
+  }
+  
+  .presentation-chat-container .chat-title .controls {
+    -ms-grid-column-align: right;
+        justify-self: right;
+    -ms-grid-row-align: center;
+        align-self: center;
+    padding-right: 10px;
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  
+  .presentation-chat-container .chat-title .controls svg {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .presentation-chat-container .wcWindowTitle {
+    display: none !important;
+  }
+  
+  .presentation-chat-container .wcContainer {
+    border-radius: 0;
+  }
+
+  .help-center {
+    text-align: center;
+    padding: 48px 0;
+  }
+  
+  .help-center .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 24px;
+  }
+  
+  .help-center .help-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 24px;
+    text-align: left;
+    background-color: #fff;
+    padding: 24px;
+  }
+  
+  .help-center .details a.button {
+    margin-left: 0;
+  }
+  
+  .chat-help {
+    background-color: #777;
+    color: #222;
+    width: 100%;
+    font-size: 12px;
+    max-height: 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .chat-help.active {
+    max-height: 170px;
+    height: 170px;
+    overflow: scroll;
+  }
+  
+  .chat-help ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .chat-help li {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #777;
+  }
+  
+  .chat-help .chat-question {
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 2px;
+    position: relative;
+    background-color: #555;
+    padding: 8px 15px 8px 5px;
+    color: #fff;
+  }
+  
+  .chat-help .chat-question:after {
+    content: '+';
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    font-size: 14px;
+  }
+  
+  .chat-help .chat-question.docked {
+    background-color: #789C3D;
+  }
+  
+  .chat-help .chat-question.docked:after {
+    content: '-';
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    font-size: 14px;
+  }
+  
+  .chat-help .chat-answer {
+    max-height: 0;
+    opacity: 0;
+    background-color: #fff;
+    padding: 0 5px;
+  }
+  
+  .chat-help .chat-answer.docked {
+    max-height: 100%;
+    opacity: 1;
+  }
+  
+  .chat-help .chat-answer p {
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin: 0;
+  }
+  
+  .chat-help-toggle path {
+    fill: #fff;
+  }
+  
+  .chat-help-toggle.active path {
+    fill: #39ff14;
+  }
+
+  .not-logged-in {
+    background-color: #eee;
+
+    .info-box {
+      text-align: center;
+      padding: 50px 0 75px;
+
+      svg {
+        width: 50px;
+        height: auto;
+        opacity: 0.25;
+      }
+    }
+  }

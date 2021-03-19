@@ -1,0 +1,36 @@
+.gpx-hero {
+  background-color: $gpx-blue;
+  background-image: url('assets/images/gpx-software.jpg');
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0;
+  position: relative;
+
+  .hero-overlay {
+    background-color: rgba(darken($gpx-blue, 10%),0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .grid {
+    min-height: 250px;
+    display: grid;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .hero-inner {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    color: $gpx-white;
+
+    h6 {
+      opacity: 0.6;
+    }
+  }
+}

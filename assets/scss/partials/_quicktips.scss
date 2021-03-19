@@ -1,0 +1,56 @@
+.quicktips {
+    text-align: center;
+    padding: $gutter 0 $gutter*2;
+
+    .tip-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: $gutter;
+        padding-top: $gutter;
+
+        @include sm {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include lg {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .tip {
+            background-color: $gpx-white;
+            text-align: left;
+
+            .details {
+                padding: $gutter/2;
+            }
+
+            .title {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .description {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .video-embed { 
+        position: relative; 
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    } 
+
+    .video-embed iframe,
+    .video-embed object,
+    .video-embed embed { 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+}

@@ -1,0 +1,120 @@
+
+
+.gpx-footer {
+  background-color: $gpx-blue;
+  // padding: 50px 0 0;
+  width: 100%;
+  float: left;  
+  position: relative;
+  z-index: 2;
+
+  .footer-top {
+    min-height: 200px;
+    color: #fff;
+    margin-bottom: 50px;
+
+    .footer-inner {
+      display: grid;
+      grid-gap: $gutter;
+
+      @include md {
+        grid-template-columns: 2fr 3fr;
+      }
+
+      .about p {
+        font-size: 13px;
+        margin-bottom: 20px;
+        line-height: 20px;
+      }
+
+      ul {
+        display: block;
+      }
+
+      li {
+        display: grid;
+        list-style: none;
+        margin-left: 0;
+        padding: 8px 0;
+        text-transform: none;
+        grid-template-columns: 40px auto;
+        align-content: center;
+        align-items: center;
+        
+
+        i {
+          font-size: 24px;
+          justify-self: center;
+          opacity: 0.65;
+        }
+
+
+      }
+
+      .social {
+        letter-spacing:5px;
+        margin-top: 15px;
+        a {
+          color: #fff;
+          opacity: 0.65;
+          transition: opacity 0.2s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        i {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  .footer-nav {
+    background-color: darken($gpx-blue,10%);
+    padding: 20px 0;
+
+    .footer-nav-inner {
+      display: grid;
+      grid-gap: $gutter;
+      // justify-items: flex-start;
+
+      @include md {
+        grid-template-columns: auto auto;
+
+      }
+
+      .copyright {
+        font-size: 12px;
+        padding-top: 4px;
+        color: #eee;
+        // justify-self: flex-start;
+
+        @include md {
+          // justify-self: flex-end;
+        }
+      }
+    }
+
+
+
+  }
+      ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin: 0 10px 0 0 !important;
+      font-size: 13px;
+      text-decoration: none;
+      text-transform: none;
+    
+      
+      a {
+        color: $gpx-white;
+      }
+
+    }  
+}
